@@ -1,6 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from './Components/Navbar'
+import ProductList from './Components/ProductList'
+import Details from './Components/Details'
+import Cart from './Components/Cart'
+import Default from './Components/Default'
 
 
 
@@ -8,17 +13,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 class App extends Component{
   render(){
     return(
-
-      <div className="container">
-        <div className="row">
-          <div className="col-6">Column number one </div>
-          <div className="col-6"><span> 
-            <i className="fa fa-home "></i>
-            <i className="fa fa-phone"></i>
-          </span> </div>
-        </div>
-      </div>
-     
+      <Fragment>
+        <Navbar />
+        <ProductList />
+        <Details />
+        <Cart />
+        <Default />
+      </Fragment>
       
 
     )
