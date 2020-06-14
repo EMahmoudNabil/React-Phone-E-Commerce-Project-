@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 
@@ -7,7 +8,18 @@ import './App.css';
 class App extends Component{
   render(){
     return(
-      <div> Store App </div>
+
+      <div className="container">
+        <div className="row">
+          <div className="col-6">Column number one </div>
+          <div className="col-6"><span> 
+            <i className="fa fa-home "></i>
+            <i className="fa fa-phone"></i>
+          </span> </div>
+        </div>
+      </div>
+     
+      
 
     )
   }
