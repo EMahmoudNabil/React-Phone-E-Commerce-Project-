@@ -6,7 +6,7 @@ import ProductList from './Components/ProductList'
 import Details from './Components/Details'
 import Cart from './Components/Cart'
 import Default from './Components/Default'
-
+import {Route,Switch} from 'react-router-dom';
 
 
 
@@ -15,10 +15,12 @@ class App extends Component{
     return(
       <Fragment>
         <Navbar />
-        <ProductList />
-        <Details />
-        <Cart />
-        <Default />
+        <Switch>
+          <Route exact path="/" component={ProductList} />
+          <Route path="/details" component={Details} />
+          <Route path="/cart" component={Cart} />
+          <Route component={Default} />
+        </Switch>
       </Fragment>
       
 
