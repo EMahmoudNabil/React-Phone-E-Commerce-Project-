@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 const  ProductContext =React.createContext();
 //1- Provider
 // 2- Consumer
-class productProvider extends Component {
+class ProductProvider extends Component {
     render() {
         return (
             <ProductContext.Provider value="Hello From Context">
@@ -16,4 +16,4 @@ class productProvider extends Component {
 
 const ProductConsumer = ProductContext.Consumer;
 
-export {productProvider ,ProductConsumer} ;
+export {ProductProvider ,ProductConsumer} ;
