@@ -14,7 +14,7 @@ export default class Navbar extends Component {
             https://www.iconfinder.com/Makoto_msk  */}
             {/* Logo */}
             <Link  to='/'>
-                <img  src={logo} alt="store" classNam="navbar-brand"/>
+                <img  src={logo} alt="store" className="navbar-brand"/>
             </Link>
             {/* product Link */}
             <ul className="navbar-nav align-items-center">
