@@ -87,6 +87,9 @@ class ProductProvider extends Component {
     clearCart = (id) => {
         console.log('clear Cart')
         }
+    addTotals = () => {
+        console.log('add Totals')
+        }
 
     render() {
         return (
